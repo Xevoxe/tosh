@@ -1,0 +1,107 @@
+/* Red #a94442 */
+
+
+
+#header {
+    background-color: #ffffff;  /* White */
+    color: #000000; /* Black */
+    text-align: center;
+}
+
+button img {
+    max-width: 100%;
+    min-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+    text-align: center;
+}
+
+#navbar {
+    text-align: center;
+    background: #a94442;
+    font-size: 0;
+}
+
+
+#navbar a{
+    padding: 15px 2%;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block; 
+     
+}
+
+#navbar a:hover {
+    color: #a94442;
+    background: white;
+    text-decoration: none;
+}
+
+#business{
+    width: 65%;
+    max-width: 900px;
+    border: 5px solid black;
+    margin: 2% auto 0 auto;
+    position: relative;
+    overflow:auto;
+}
+
+#tabs {
+    background-color: #a94442;
+    width: 65%;
+    float:left;
+  
+}
+
+.tabcontent {
+    display: none;
+}
+
+.tablinks {
+    float: left;
+    width: 33.33%;
+    height: 50%;   
+}
+
+.tablinks:hover{
+    outline-color: #a94442;
+    opacity: .5;
+}
+
+#infobox{
+    float: right;
+    width: 35%;
+    font-size: 1.3vw;
+    padding: 10px;
+}
+
+
+.tablinks:focus{
+    border: solid 5px red;
+    opacity: .7;
+    
+}
+
+.tablinks.img{
+    text-align: center;
+}
+
+#infobox h2 {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+
+#infobox p{
+    text-align: center;
+    padding:2px;
+}
+
+#infobox .buttons{
+    display: block;
+    margin:  auto;
+    width: 80%;
+    font-size: 1vw;
+    border: solid 2px red;
+}
