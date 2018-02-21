@@ -1,14 +1,14 @@
 /* Red #a94442 */
 
 
-
-#header {
-    background-color: #ffffff;  /* White */
-    color: #000000; /* Black */
-    text-align: center;
+/* Global Styles */
+section {
+    width: 65%;
+    max-width: 900px;
+    margin: 2% auto 0 auto;
 }
 
-button img {
+img {
     max-width: 100%;
     min-width: 100%;
     height: auto;
@@ -16,6 +16,60 @@ button img {
     text-align: center;
 }
 
+aside {
+    width: 33%;
+    float: left;
+    text-align: center;
+    font-size: 1vw;
+    color: white;
+}
+
+h3 {
+    text-decoration: underline;
+}
+
+/* Aside Global Styles */
+
+aside img {
+    min-width: 5%;
+}
+
+.smlogo {
+    width: 50%;
+    margin: 0 auto 0 auto;
+}
+
+aside p + p {
+    text-indent: 1.5em;
+}
+
+aside {
+    width: 33%;
+    float: left;
+    text-align: center;
+    font-size: 1vw;
+    color: white;
+}
+
+/* Header Styles */
+
+#header {
+    background-color: #ffffff;  /* White */
+    color: #000000; /* Black */
+    text-align: center;
+}
+
+
+#headerlogo{
+    width:12%;
+    margin: 1% auto 0 auto;
+}
+
+#header {
+    font-size: 1.5vw;
+}
+
+/* Header Navbar Styles */
 #navbar {
     text-align: center;
     background: #a94442;
@@ -33,16 +87,14 @@ button img {
 }
 
 #navbar a:hover {
+    background-color: #ebb0b0;
     color: #a94442;
-    background: white;
     text-decoration: none;
 }
 
+/*Section Business Styles */
 #business{
-    width: 65%;
-    max-width: 900px;
-    border: 5px solid black;
-    margin: 2% auto 0 auto;
+    border: 5px solid black;  
     position: relative;
     overflow:auto;
 }
@@ -105,3 +157,49 @@ button img {
     font-size: 1vw;
     border: solid 2px red;
 }
+
+/* Section Logos Styles */
+#logos {
+    margin: 2% auto 0 auto;
+    border: solid 2px black;
+}
+
+/* Footer Section */
+.content {
+    text-align: left;
+    
+}
+
+.content p{
+    margin-left: 22%;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.material-icons {
+    font-size: 1.3vw;
+}
+
+footer {
+    background-color: #a94442;
+    padding: 2%;
+    margin-bottom: 20%;
+}
+
+footer a{
+    width: 13.3%;
+    color: white;
+    font-size: 1vw;
+    text-decoration: none;
+    display: inline-block; 
+}
+
+.nav{
+    text-align: center;
+    clear: both;
+    padding-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+

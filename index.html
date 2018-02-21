@@ -4,15 +4,18 @@
         <title>Tosh Insruance Agency</title>
         <meta charset= "utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link type ="text/css" rel="stylesheet" href="css/style.css">
         <link type ="text/css" rel="stylesheet" href="css/splattfu.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link type ="text/css" rel="stylesheet" href="css/style.css">
         <script src= "javascript/tosh.js"></script>
     </head>
     <body>
         
 <!-- Header -->
         <header id="header">
-            <img src ="images/logo.png" alt="Tosh Insurance Agency">
+                <div id="headerlogo">
+                        <img src ="images/logo.png" alt="Tosh Insurance Agency">
+                </div>
             <h1>Tosh Insurance Agency</h1>
             <p><em>Serving East Texas since 1926.</em></p>
         </header>
@@ -30,7 +33,7 @@
         </nav>
 
 <!-- Container Lines of Business -->
-        <section id ="business" class="row">
+        <section id ="business">
             <div id="tabs">
                 <div class="tab"></div>           
                     <button class = "tablinks" type="button" onclick="openTab(event, 'tabauto')"><img src = "images/auto.png" alt= "Auto Insurance"></button>          
@@ -65,7 +68,8 @@
              </div>
              <div id="tabmotorcycle" class="tabcontent">
                     <h2>Motorcycle</h2>
-                    <p>BLah</p>
+                    <p>Need to protect your pride and joy. Motocycles come in all shapes and sizes and our experts can find the policy that is just for you.</p>
+                    <button class ="buttons" type ="button">Request a <em>Free Quote!</em></button>
             </div>
             <div id="tabrec" class="tabcontent">
                     <h2>Recreational Vehicles</h2>
@@ -76,13 +80,46 @@
         </section>
 <!-- Container Business Logos -->
         <section id="logos">
-                <p>LOGOS</p>
+                <img src="images/logos.png" alt="Our insurance companies">
         </section>
 
 <!-- Footer -->
-        <footer>
-            
-        </footer>
+        <section>
+                <footer>
+                        <aside>
+                                <h3>Rusk Office</h2>
+                                <div class="content">
+                                        <p><i class="material-icons">phone</i> 903-683-5433</p>
+                                        <p>256 Main St</p>
+                                        <p>Rusk, Tx 75785</p>
+                                </div>
+                        </aside>
+                        <aside>
+                               
+                                       <p><i class="material-icons">email</i> agency@toshinsurance.com</p>
+                                       <div class="smlogo">
+                                       <img src="images/logosm.png" alt="Tosh Insurance Agency">
+                                       </div>   
+                                
+                        </aside>
+                        <aside>
+                                <h3>Alto Office</h3>
+                                <div class="content">
+                                        <p><i class="material-icons">phone</i> 903-683-5433</p>
+                                        <p>205 W. San Antonio St.</p>
+                                        <p>Alto, Tx 75925</p>
+                                </div>
+                        </aside>
+                        <div class="nav"> 
+                        <a href="#">Home</a>
+                        <a href="#">Services</a>
+                        <a href="#">Quotes</a>
+                        <a href="#">Claims</a>
+                        <a href="#">Payments</a>
+                        <a href="#">Contact Us</a>
+                        </div>
+                </footer>
+        <section>
 
       
 
