@@ -6,6 +6,11 @@ section {
     width: 65%;
     max-width: 900px;
     margin: 2% auto 0 auto;
+    font-size: 1vw;
+}
+
+section h1, h2 {
+    text-align: center;
 }
 
 img {
@@ -94,9 +99,10 @@ aside {
 
 /*Section Business Styles */
 #business{
-    border: 5px solid black;  
+     
     position: relative;
-    overflow:auto;
+    overflow:hidden;
+    background-color: #f5f3f3;
 }
 
 #tabs {
@@ -108,6 +114,10 @@ aside {
 
 .tabcontent {
     display: none;
+}
+
+.tabcontent:first-child {
+    display: block;
 }
 
 .tablinks {
@@ -124,13 +134,12 @@ aside {
 #infobox{
     float: right;
     width: 35%;
-    font-size: 1.25vw;
     padding: 10px;
 }
 
 
 .tablinks:focus{
-    border: solid 5px red;
+    border: solid 5px #b4b2b2;
     opacity: .7;
     
 }
@@ -154,7 +163,6 @@ aside {
     display: block;
     margin:  auto;
     width: 80%;
-    font-size: 1vw;
     border: solid 2px red;
 }
 
@@ -203,3 +211,67 @@ footer a{
     
 }
 
+.tabheader {
+    background-color: #a94442;
+    color: white;
+}
+
+.sectioncontent{
+    overflow: hidden;
+    text-align:center;
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+ 
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+.sectioncontent ul a{
+    display:block;
+    text-decoration: none;
+    color: black;
+    background-color: #f5f3f3;
+}
+
+.sectioncontent li{
+    float:left;
+    width: 25%;
+    overflow: hidden;
+    display:block;
+    color: black;
+    text-decoration: none;
+    margin-top: 2%;
+    padding: 1%;
+    
+}
+
+.sectioncontent li:nth-child(4n+1){
+    clear: left;
+}
+
+
+.sectioncontent ul a:hover{
+    background-color: #a94442;
+}
+
+
+@media only screen and (max-width: 900px){
+    section {
+        width:100%;
+        font-size: 2vw;
+    }
+    .sectioncontent li {
+        width: 25%;
+    }
+
+    .sectioncontent {
+        margin: 0;
+    }
+
+}
