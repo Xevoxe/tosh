@@ -182,14 +182,14 @@ aside {
 /* Footer Section */
 .content {
     text-align: left;
-    
 }
 
-.content p{
-    margin-left: 22%;
-    margin-bottom: 0;
-    margin-top: 0;
+.content p {
+    margin-left: auto;
+    margin-right: auto;
+    width: 20em;
 }
+
 
 .material-icons {
     font-size: 1.3vw;
@@ -199,12 +199,12 @@ footer {
     background-color: #a94442;
     padding: 2%;
     margin-bottom: 20%;
+    font-size: 1vh;
 }
 
 footer a{
     width: 13.3%;
     color: white;
-    font-size: 1vw;
     text-decoration: none;
     display: inline-block; 
 }
