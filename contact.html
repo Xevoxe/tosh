@@ -8,7 +8,6 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link type ="text/css" rel="stylesheet" href="css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Monda" rel="stylesheet">
-        <script src= "javascript/tosh.js"></script>
     </head>
     <body>
         
@@ -31,22 +30,37 @@
             <a href="contact.html">Contact Us</a>
         </div>
         </nav>
-<section id="contact">
-        <div class="contactbg">
-        </div>
+<section>
+        
         <h2>Contact Us!</h2>
-        <form id="contactus" method="post" action="">
-                <label for="name">Full Name</label>
-                <input type="text" name="name" id="name"><br>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email"><br>
-                <label for="tele">Phone Number</label>
-                <input type ="number" id="tele" name="tele"><br>
-                <label for="prefphone">Phone</label>
-                <input type="radio" name="prefered" value="phone" id="prefphone" checked>
-                <label for="prefemail">Email</label>
-                <input type="radio" name="prefered" value="email" id="prefmail">
-        </form>
+        
+        <div class="contact">
+                <form id="contactus" method="post" action="">
+                        
+                       <label for="name">Name:</label>
+                       <input type="text" name="name" id="name"><br>
+                       
+                    
+                        <label for="email">Email:</label>
+                       <input type="email" id="email" name="email"><br>
+                       
+                      
+                       <label for="tele">Phone Number:</label>
+                       <input type ="tel" id="tele" name="tele"><br>
+                        
+                <fieldset>
+                        <legend>Prefered Method of Contact:</legend>
+                       <div class="method">
+                                <label for="prefphone">Phone</label>
+                                <input type="radio" name="prefered" value="phone" id="prefphone" checked>
+                                <label for="prefemail">Email</label>
+                                <input type="radio" name="prefered" value="email" id="prefmail">
+                </fieldset>
+                      <p>Message:</p>
+                      <textarea name="message"></textarea>
+                </form>
+
+        </div>
         
 </section>
 <!-- Footer -->
@@ -62,7 +76,7 @@
                 </aside>
                 <aside>
                        
-                               <p><i class="material-icons">email</i> agency@toshinsurance.com</p>
+                               <p><i class="material-icons">email</i> mailto:agency@toshinsurance.com</p>
                                <div class="smlogo">
                                <img src="images/logosm.png" alt="Tosh Insurance Agency">
                                </div>   

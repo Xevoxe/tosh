@@ -282,3 +282,58 @@ ul {
     }
 
 }
+
+/* Forms */
+
+form p {
+    display: table-row;
+}
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;  
+}
+
+input, textarea {
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+label {
+    display:block;
+}
+
+.method label {
+    display: inline;
+}
+
+input[type="text"], input[type="tel"], input[type="email"] {
+    width: 40%;
+    margin: .2em auto .8em auto;
+}
+
+#contactus {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5%;
+}
+
+.contact {
+    background-color: #f5f3f3;
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+    height: 10em;
+
+}
+
+@media (min-width: 35em)
+{
+    label {
+        width: 10em;
+        display:inline-block;
+    }
+
+}
