@@ -38,26 +38,20 @@
                 <form id="contactus" method="post" action="">
                         
                        <label for="name">Name:</label>
-                       <input type="text" name="name" id="name"><br>
-                       
+                       <input type="text" onblur="textValidation('contactus', 'name')" name="name" id="name" required>
+                       <span id="nameerror" class="error"></span><br>
                     
                         <label for="email">Email:</label>
-                       <input type="email" id="email" name="email"><br>
-                       
+                       <input type="email" id="email" name="email" required><br>
+                       <span id="emailerror" class="error"></span>
                       
                        <label for="tele">Phone Number:</label>
-                       <input type ="tel" id="tele" name="tele"><br>
-                        
-                <fieldset>
-                        <legend>Prefered Method of Contact:</legend>
-                       <div class="method">
-                                <label for="prefphone">Phone</label>
-                                <input type="radio" name="prefered" value="phone" id="prefphone" checked>
-                                <label for="prefemail">Email</label>
-                                <input type="radio" name="prefered" value="email" id="prefmail">
+                       <input type ="tel" id="tele" name="tele" required><br>
+                       <span id="teleerror" class="error"></span>
                 </fieldset>
                       <p>Message:</p>
                       <textarea name="message"></textarea>
+                      <input type="submit" value="submit">
                 </form>
 
         </div>
@@ -100,7 +94,7 @@
         </footer>
 <section>
 
-
+<script src= "source/main.js"></script>
 
 </body>
 

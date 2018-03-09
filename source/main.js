@@ -14,3 +14,11 @@ function openTab(evt, tabName){
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
 }
+
+function textValidation(formName, inputName){
+
+    var test = document.forms[formName][inputName];
+    if(!document.forms[formName][inputName].value){
+    document.getElementById(inputName + 'error').innerHTML="<p>Cannot be blank.</p>";
+    }else document.getElementById(inputName + 'error').innerHTML="";
+}
