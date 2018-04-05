@@ -1,11 +1,14 @@
-    <?php include "includes/header.php"; ?>
+<?php include "includes/header.php"; ?>
     <body>     
         <div class="container-main container-mid clearfix">
                 <div id="page-title">                      
                 </div>
                 <div id="background-layer">
-                        <h1 class="heading center-text">Contact Us</h1>
-                </div>
+                        <h1 class="heading center-text">Home Insurance Quote</h1>
+                        <div class="info-box">
+                        <p>Due to the complex nature of quoting home insurance, we ask you to contact us so we can ensure we qoute the best policy possible.</p>
+</div>
+                    </div>
                         <div class="container-mid formcontainer">
                                 <form id="autoform" name="autoform" method="post" action="">                                    
                                         <fieldset>
@@ -33,7 +36,6 @@
                         </div>
         </div>
         <?php include "includes/footer.php";?>
-        <script src= "source/adddriver.js"></script>
 </body>
 
 </html>
