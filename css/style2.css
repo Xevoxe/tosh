@@ -91,9 +91,8 @@ h2 {
 
 
 body {
-
   font-size: 17px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Playfair Display', serif;
 }
 
 body input{
@@ -325,7 +324,6 @@ p.sub-heading {
   }
 
   .info-box {
-    margin: 50px;
     font-size: 110%;
   }
 
@@ -380,6 +378,73 @@ p.sub-heading {
   opacity: .3;
   filter: alpha(opacity=30);
   cursor: pointer;
+}
+
+/*MAINCONTAINER COMPANY STYLES */
+
+.block-company {
+  width: 100%;
+  display: block;
+  padding: 15px;
+  max-width: 300px;
+  margin: 0 auto 0 auto;
+}
+
+.block-company img {
+  width: 100%;
+  height: auto;
+}
+
+.block-image {
+  background-color: white;
+  box-shadow: inset 0px 3px 20px -1px #000000;
+  padding: 20px; 
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.block-company .info-box {
+  box-shadow: inset 0px -3px 18px 1px #652826;
+  padding-top: 1px;
+
+}
+
+.vertical-center {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+
+@media (min-width: 600px)
+{
+
+  .company-container{
+    max-width: 600px;
+    margin: 0 auto 0 auto;
+  }
+  .block-company {
+    min-height: 200px;
+    margin: 0;
+    float: left;
+  }
+
+  .block-image {
+    min-height: 200px;
+  }
+}
+
+@media (min-width: 1200px)
+{
+  .company-container{
+    max-width: 100%;
+    margin: 0;
+  }
+  .block-compay {
+    width: 33%;
+  }
+
 }
 
 /* STYLES FORM */
@@ -603,6 +668,7 @@ select {
 .footer-info {
   width: 80%;
   margin: 0 auto 0 auto;
+  color: white;
 }
 
 .footer-info p {

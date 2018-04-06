@@ -7,7 +7,7 @@
                         <h1 class="heading center-text">Home Insurance Quote</h1>
                         <div class="info-box">
                         <p>Due to the complex nature of quoting home insurance, we ask you to contact us so we find you the best policy possible.</p>
-</div>
+                        </div>
                     </div>
                         <div class="container-mid formcontainer">
                                 <form id="autoform" name="autoform" method="post" action="">                                    
