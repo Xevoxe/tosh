@@ -153,7 +153,6 @@ p.sub-heading {
     color: white;
 }
 #navbar-block a:hover {
-  border: 1px solid #a94442;
   color:#a94442;
   background-color: white;
 }
