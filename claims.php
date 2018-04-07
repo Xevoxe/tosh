@@ -14,7 +14,7 @@
                         <div class="block-company">
                             <div class="block-image">
                                 <div class="vertical-center">
-                                    <img src="images/dairyland.png" alt="Dairyland">
+                                    <img src="images/Dairyland.png" alt="Dairyland">
                                 </div>
                             </div>
                             <div class="info-box center-text">
@@ -34,7 +34,7 @@
                         <div class="block-company">
                                 <div class="block-image">
                                     <div class="vertical-center">
-                                      <img src="images/Kemper_Preferred.jpg" alt="Kemper Preferred">
+                                      <img src="images/kemper_preferred.jpg" alt="Kemper Preferred">
                                     </div>
                                 </div>
                                 <div class="info-box center-text">

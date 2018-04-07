@@ -15,7 +15,7 @@
                             <div class="block-image">
                                 <div class="vertical-center">
                                 <a href="https://my.dairylandinsurance.com/">
-                                    <img src="images/dairyland.png" alt="Dairyland">
+                                    <img src="images/Dairyland.png" alt="Dairyland">
                                 </a>
                                 </div>
                             </div>
@@ -33,7 +33,7 @@
                                 <div class="block-image">
                                     <div class="vertical-center">
                                     <a href="https://www.ekemper.com/KemperCustomerPublic/login.jspx?TYPE=33554433&amp;REALMOID=067ca70e6a-1840-41ef-aca759983b7d18af&amp;GUID=&amp;SMAUTHREASON=0&amp;METHOD=GET&amp;SMAGENTNAME=agentwww.ekemper.com&amp;TARGET=-SMhttps%3a%2f%2fwww%2eekemper%2ecom%2fcustomer%2fprofile%2flogin%2edo">
-                                      <img src="images/Kemper_Preferred.jpg" alt="Kemper Preferred"></a>
+                                      <img src="images/kemper_preferred.jpg" alt="Kemper Preferred"></a>
                                     </div>
                                 </div>
                         </div>
