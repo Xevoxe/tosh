@@ -6,7 +6,7 @@
                 <div id="background-layer">
                         <h1 class="heading center-text">Home Insurance Quote</h1>
                         <div class="info-box">
-                        <p>Due to the complex nature of quoting home insurance, we ask you to contact us so we find you the best policy possible.</p>
+                        <p>Due to the complex nature of quoting home insurance, we ask you to contact us so we are able to find you the best policy possible.</p>
                         </div>
                     </div>
                         <div class="container-mid formcontainer">

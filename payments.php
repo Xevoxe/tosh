@@ -6,7 +6,7 @@
                     <div id="background-layer">
                             <h1 class="heading center-text">Payments</h1>
                             <div class="info-box">
-                            <p>To make an online payment, have your policy number ready and click on your insurance company below.</p>
+                             <p>To make an online payment, have your policy number ready and click on your insurance company below.  You will be redirected to the carriers payment site.</p>
                             </div>
                     </div>
 
@@ -73,7 +73,7 @@
                                 <div class="block-image">
                                 <div class="vertical-center">
                                 <a href= "https://www.travelers.com/pay-your-bill.aspx?lob=pi">
-                                <img src="images/travelers.jpg" alt="Travelers">
+                                <img src="images/travelers.png" alt="Travelers"></a>
                                 </div>
                                 </div>
                         </div>   

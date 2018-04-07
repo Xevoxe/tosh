@@ -84,7 +84,7 @@
                         <div class="block-company">
                                 <div class="block-image">
                                 <div class="vertical-center">
-                                <img src="images/travelers.jpg" alt="Travelers">
+                                <img src="images/travelers.png" alt="Travelers">
                                 </div>
                                 </div>
                                 <div class="info-box center-text">
