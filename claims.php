@@ -80,7 +80,17 @@
                                 <div class="info-box center-text">
                                 <p><i class="material-icons">phone</i>1-800-274-4499</p>
                                 </div>
-                        </div>  
+                        </div>
+                        <div class="block-company">
+                                <div class="block-image">
+                                <div class="vertical-center">
+                                <img src="images/travelers.jpg" alt="Travelers">
+                                </div>
+                                </div>
+                                <div class="info-box center-text">
+                                <p><i class="material-icons">phone</i>1-800-252-4633</p>
+                                </div>
+                        </div>   
                     </div>          
         </div>
 <?php include "includes/footer.php"; ?>

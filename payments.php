@@ -68,7 +68,15 @@
                                 <img src="https://www.progressive.com/content/images/agents/banners/drive_logo_sm.gif" alt="Progressive" border=0 /></a>
                                 </div>
                                 </div>
-                        </div>  
+                        </div>
+                        <div class="block-company">
+                                <div class="block-image">
+                                <div class="vertical-center">
+                                <a href= "https://www.travelers.com/pay-your-bill.aspx?lob=pi">
+                                <img src="images/travelers.jpg" alt="Travelers">
+                                </div>
+                                </div>
+                        </div>   
                     </div>          
         </div>
 <?php include "includes/footer.php"; ?>
