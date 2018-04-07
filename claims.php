@@ -6,7 +6,7 @@
                     <div id="background-layer">
                             <h1 class="heading center-text">Claims</h1>
                             <div class="info-box">
-                            <p>If you need to file a claim after business hours, have your policy number ready and click or call your company at the number listed below.</p>
+                            <p>If you need to file a claim after business hours, have your policy number ready and call your company at the number listed below.</p>
                             </div>
                     </div>
 

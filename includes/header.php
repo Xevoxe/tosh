@@ -4,6 +4,7 @@
         <title>Tosh Insurance Agency</title>
         <meta charset= "utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Cache-control" content="no-cache">
         <link type ="text/css" rel="stylesheet" href="css/style2.css">
         <link href="https://fonts.googleapis.com/css?family=Lato|Roboto|Pacifico" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
