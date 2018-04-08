@@ -71,7 +71,6 @@
           </div>
 
           <div class="container-logo clearfix">
-          <h2 class="threed-heading">Our Companies</h2>
             <div class="block-logo">
                 <div class="block-image">
                     <div class="vertical-center">
