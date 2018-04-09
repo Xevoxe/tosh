@@ -1,17 +1,17 @@
-       
+     
         <footer>
-                <div id="footer" class="grid-parent container-mid">
+                <div id="footer" class="grid-parent container-mid clearfix">
                         <div class="grid-child form-block footer-box">
                                 <div class="footer-info">
-                                <h3>Rusk Office</h3>
-                                <p><i class="material-icons">phone</i> 903-683-5433</p>
-                                <p>256 Main St</p>
-                                <p>Rusk, TX 75785</p>
+                                        <h3>Rusk Office</h3>
+                                        <p><i class="material-icons">phone</i> 903-683-5433</p>
+                                        <p>256 Main St</p>
+                                        <p>Rusk, TX 75785</p>
                                 </div>
                         </div>
                         <div class="grid-child form-block center-text">             
                                <a href="https://www.facebook.com/ToshInsuranceAgency/"><img src="images/facebookiconsm.png" alt="Follow on Facebook">
-                               <i class="material-icons">email</i><a href="https://www.facebook.com/ToshInsuranceAgency/">
+                               <i class="material-icons">email</i><a href="https://www.facebook.com/ToshInsuranceAgency/"></a>
                                <a href="mailto:agency@toshinsurance.com">agency@toshinsurance.com</a>
                                <img src="images/logosm.png" alt="Tosh Insurance Agency">
                         </div>
@@ -24,6 +24,9 @@
                                 <p>Alto, TX 75925</p>
                                 </div>
                         </div>
+                </div>
+                <div class="copyright container-mid">
+                 <p>&copy; 2018.  All Rights Reserved.  Website by: Joseph Arellano</p>
                 </div>
         </footer>
         <script src= "source/main.js"></script>

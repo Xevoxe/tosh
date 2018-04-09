@@ -721,10 +721,6 @@ select {
   z-index: -1;
 }
 
-#footer h3{
-  margin: -1px;
-}
-
 .clearfix:after { 
   content: "."; 
   visibility: hidden; 
@@ -757,14 +753,25 @@ select {
 
 
 .footer-info {
-  width: 80%;
   margin: 0 auto 0 auto;
   color: white;
+  width: 225px;
 }
 
 .footer-info p {
   margin: 0px;
+
+
 }
 .footer-info p:nth-child(n+3) {
   margin-left: 25px;
 }
+ .copyright {
+   text-align: center;
+   background: inherit;
+   font-size: 75%;
+   color: white;
+   background-color: #a94442;
+   margin-top: 0;
+   padding: 20px;
+ }
