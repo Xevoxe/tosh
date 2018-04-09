@@ -27,7 +27,7 @@
                                         <fieldset>
                                                 <legend><h2>Message</h2></legend>
                                                 <textarea id="comments" class="input-text" name="comments"></textarea>
-                                                <input type="submit" class= "error" value="submit">
+                                                <input type="submit" class= "add_button error" value="submit">
                                         </fieldset> 
                                 </form>
                         </div>
