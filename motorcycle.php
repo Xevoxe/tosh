@@ -117,7 +117,6 @@
                                                                 <label for="model" class="label label-required">Model:</label>
                                                                 <input type="text" id="model" class="input-text" name="model" required>
                                                         </div>
-                                                </div>
                                                 <div class="form-block grid-child">
                                                         <label for="vin" class="label">VIN:</label>
                                                         <input type="text" id="vin" class="input-text" name="vin">
@@ -130,6 +129,7 @@
                                                         <label for="ccsize" class="label label-required">CC Size:</label>
                                                         <input type="text" id="ccsize" class="input-text" name="value">                            
                                                 </div>
+</div>
                                         </fieldset>
                                         </div>
                                         <fieldset>
