@@ -90,8 +90,51 @@
                                 <div class="info-box center-text">
                                 <p><i class="material-icons">phone</i>1-800-252-4633</p>
                                 </div>
-                        </div>   
-                    </div>          
+                        </div>
+                        <div class="block-company foremost-style">
+                                <div class="block-image">
+                                <div class="vertical-center">
+                                <img src="images/foremostlogo.gif" alt="Foremost Insurance">
+                                </div>
+                                </div>
+                                <div class="info-box center-text">
+                                <p>Auto</p>
+                                <p><i class="material-icons">phone</i>1-800-274-7865</p>
+                                </div>
+                        </div>
+                        <div class="block-company foremost-style">
+                                <div class="block-image">
+                                <div class="vertical-center">
+                                <img src="images/foremostlogo.gif" alt="Foremost Insurance">
+                                </div>
+                                </div>
+                                <div class="info-box center-text">
+                                <p>Specialty</p>
+                                <p><i class="material-icons">phone</i>1-800-527-3907</p>
+                                </div>
+                        </div>
+                        <div class="block-company">
+                                <div class="block-image">
+                                <div class="vertical-center">
+                                <img src="images/mercury.jpg" alt="Mercury Insurance">
+                                </div>
+                                </div>
+                                <div class="info-box center-text">
+                                <p><i class="material-icons">phone</i>1-800-503-3724</p>
+                                </div>
+                        </div>
+                        <div class="block-company">
+                                <div class="block-image">
+                                <div class="vertical-center">
+                                <img src="images/salogo.jpg" alt="State Auto Insurance">
+                                </div>
+                                </div>
+                                <div class="info-box center-text">
+                                <p><i class="material-icons">phone</i>1-800-766-1853</p>
+                                </div>
+                        </div>  
+                    </div>   
+                    <p class="text-center">If your company is not listed please call Tosh Insurance at  1-903-683-5433 during business hours.</p>      
         </div>
 <?php include "includes/footer.php"; ?>
     </body>

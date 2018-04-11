@@ -70,6 +70,9 @@ html a {
   text-align: center;
 }
 
+.text-center {
+  text-align: center;
+}
 
 @media (min-width:1200px){
   html {
@@ -424,7 +427,7 @@ p.sub-heading {
 
 .block-image {
   background-color: white;
-  box-shadow: inset 0px 3px 20px -1px #000000;
+  box-shadow: inset 0px 3px 8px -1px #000000;
   padding: 20px; 
   display: table;
   table-layout: fixed;
@@ -775,3 +778,16 @@ select {
    margin-top: 0;
    padding: 20px;
  }
+
+/* SPECIFIC STYLES */
+.foremost-style p {
+  margin: 7px auto 0 auto;
+}
+
+.text-block  {
+  color:grey;
+}
+
+.text-block p {
+  margin:0;
+}

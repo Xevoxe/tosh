@@ -6,7 +6,7 @@
                     <div id="background-layer">
                             <h1 class="heading center-text">Payments</h1>
                             <div class="info-box">
-                             <p>To make an online payment, have your policy number ready and click on your insurance company below.  You will be redirected to the carriers payment site.</p>
+                             <p>To make an online payment, have your policy number ready and click on your insurance company below.</p>
                             </div>
                     </div>
 
@@ -76,8 +76,43 @@
                                 <img src="images/travelers.png" alt="Travelers"></a>
                                 </div>
                                 </div>
+                        </div>
+                        <div class="block-company">
+                                <div class="block-image">
+                                <div class="vertical-center">
+                                <a href="https://payment.mercuryinsurance.com/payments/stateSelection"><img src="images/mercury.jpg" alt="Mercury Insurance"></a>
+                                </div>
+                                </div>
+                        </div>
+                        <div class="block-company">
+                                <div class="block-image">
+                                <div class="vertical-center">
+                                <a href"https://www.stateauto.com/Payment/"><img src="images/salogo.jpg" alt="State Auto Insurance"></a>
+                                </div>
+                                </div>
                         </div>   
-                    </div>          
+                        <div class="block-company foremost-style">
+                                <div class="block-image">
+                                <div class="vertical-center">
+                                <a href="https://www.bristolwest.com/bristolwest/login/login.aspx?Foremost=true"><img src="images/foremostlogo.gif" alt="Foremost Insurance"></a>
+                                </div>
+                                </div>
+                                <div class="info-box center-text">
+                                <p>Auto</p>
+                                </div>
+                        </div>
+                        <div class="block-company foremost-style">
+                                <div class="block-image">
+                                <div class="vertical-center">
+                                <a href="https://secure4.billerweb.com/fmi/JustPayIt/jpt.do"><img src="images/foremostlogo.gif" alt="Foremost Insurance"></a>
+                                </div>
+                                </div>
+                                <div class="info-box center-text">
+                                <p>Specialty</p>
+                                </div>
+                        </div>  
+                    </div>
+            <p class="text-center">You will be redirected to the carriers payment site.</p>          
         </div>
 <?php include "includes/footer.php"; ?>
     </body>

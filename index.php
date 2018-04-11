@@ -27,7 +27,7 @@
                 <div id="tabauto" class="tabcontent">
                     <div class="block-text">
                     <h2>Auto</h2>
-                    <p>Looking for or need a change in auto coverage? <strong>Request a quote today!</strong> Our experts will find and customize an affordable policy just for you!</p>
+                    <p>Looking for or need a change in auto coverage? <strong>Request a quote today!</strong> Our experts will find and customize an affordable policy just for you.</p>
                     </div>
                     <a href="auto.php"><button class ="buttons tabbutton" type ="button">Request a <em>Free Quote!</em></button></a>
                 </div>
@@ -41,7 +41,7 @@
                 <div id="tabbusiness" class="tabcontent">
                     <div class="block-text">
                     <h2>Business</h2>
-                    <p>We know you work hard for your business and we are equally commited to protecting your business.  Contact us today and let one of our experts find the best insurance solution to meet all your business needs.</p>
+                    <p>We know you work hard for your business and we are equally commited to protecting it.  Contact us today and let one of our experts find the best insurance solution to meet all your business needs.</p>
                     </div>
                     <a href="contact.php"><button class ="buttons tabbutton" type="button">Contact us <em><strong>today!</strong></em></button></a>
                 </div>
@@ -55,7 +55,7 @@
                 <div id="tabmotorcycle" class="tabcontent">
                     <div class="block-text">
                     <h2>Motorcycle</h2>
-                    <p>Need to protect your pride and joy. Motocycles come in all shapes and sizes and our experts can find the policy that is just for you.</p>
+                    <p>Need to protect your pride and joy. Motorcycles come in all shapes and sizes and our experts can find the policy that is just for you.</p>
                     </div>
                     
                     <a href="motocycle.php"><button class ="buttons tabbutton" type ="button">Request a <em>Free Quote!</em></button></a>
@@ -124,6 +124,34 @@
                 <div class="block-image">
                     <div class="vertical-center">
                     <img src="images/travelers.png" alt="Travelers Insurance"> 
+                    </div>              
+                </div>
+            </div>
+            <div class="block-logo">
+                <div class="block-image">
+                    <div class="vertical-center">
+                    <img src="images/foremostlogo.gif" alt="Foremost Insurance"> 
+                    </div>              
+                </div>
+            </div>
+            <div class="block-logo">
+                <div class="block-image">
+                    <div class="vertical-center">
+                    <img src="images/mercury.jpg" alt="Mercury Insurance"> 
+                    </div>              
+                </div>
+            </div>
+            <div class="block-logo">
+                <div class="block-image">
+                    <div class="vertical-center">
+                    <img src="images/salogo.jpg" alt="State Auto Insurance"> 
+                    </div>              
+                </div>
+            </div>
+            <div class="block-logo">
+                <div class="block-image text-block">
+                    <div class="vertical-center">
+                    <p>Our agency represents the companies listed along with many more.</p> 
                     </div>              
                 </div>
             </div>
