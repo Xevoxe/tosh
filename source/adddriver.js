@@ -6,19 +6,22 @@ function addDriver(container){
     driverId++;   //Tracks added drivers
     var fieldset = document.createElement("fieldset");
     var id = "driver_" + driverId;
+    var name = id + "_name";
+    var dob = id + "_date_of_birth";
+    var license = id + "_license";
     var html = '<legend><h2>Driver ' + '# ' + driverId + '</h2></legend>' +
                 '<div class="add-container">' +
                 '<div class="grid-child form-block" id="driver-info">' +
                 '<label for="drivername" class="label label-required">Driver\'s Name:</label>'+
-                '<input type="text" class="input-text" name="drivername" required maxlength="30">' +
+                '<input type="text" class="input-text" name =' + name + '" maxlength="30" <?php echo fill_form(' + name + '); ?> ' +
                 '</div>' +
                 '<div class="grid-child form-block">' +
                 '<label for="birthdate" class="label label-required">Date of Birth:</label>' +
-                '<input type="date" class="input-text" name="dob" required>' +
+                '<input type="date" class="input-text" name="' + dob + '" <?php echo fill_form(' + dob + '); ?> ' +
                 '</div>' +
                 '<div class="grid-child form-block">' +
                 '<label for="licensenumber" class="label label-required">Driver License #:</label>' +
-                '<input type="text" class="input-text" name="license" maxlength="10">' +
+                '<input type="text" class="input-text" name="' + license + '" maxlength="10" <?php echo fill_form(' + license + '); ?> ' +
                 '</div>' +
                 '</div>' +
                 '<button type="button" class="x" class="add_button" onclick="remove('+id+')">X</button>';

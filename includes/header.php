@@ -34,4 +34,5 @@
                         <a href="payments.php">Payments</a>
                         <a href="contact.php">Contact Us</a>
                 </nav>
-        </header>
+</header>
+<?php include "includes/formvalidation.php";?>
