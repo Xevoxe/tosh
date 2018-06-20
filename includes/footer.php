@@ -11,7 +11,6 @@
                         </div>
                         <div class="grid-child form-block center-text">             
                                <a href="https://www.facebook.com/ToshInsuranceAgency/"><img src="images/facebookiconsm.png" alt="Follow on Facebook">
-                               <i class="material-icons">email</i><a href="https://www.facebook.com/ToshInsuranceAgency/"></a>
                                <a href="mailto:agency@toshinsurance.com">agency@toshinsurance.com</a>
                                <img src="images/logosm.png" alt="Tosh Insurance Agency">
                         </div>
@@ -30,4 +29,6 @@
                 </div>
         </footer>
         <script src= "source/main.js"></script>
-        <script src= "source/adddriver.js"></script>
+        <script src= "source/form.js"></script>
+        <script src= "source/formvalidation.js"></script>
+</html>

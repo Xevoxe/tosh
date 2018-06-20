@@ -2,14 +2,13 @@
 //Show first tab
 var hometab = document.getElementById("hometab")
 
-if(hometab){
-    hometab.style.display = "block";
-}
-
 function openTab(evt, tabName, tabbutton){
     var i, tabcontent, tablinks;
     tabimages = document.getElementsByClassName("block-tab");
     tabcontent = document.getElementsByClassName("tabcontent");
+    //Hide the hometab
+    hometab.style.display = "none";
+
     for(i = 0 ; i < tabcontent.length ; i++){
         tabcontent[i].style.display = "none";
     }

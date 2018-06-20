@@ -18,7 +18,7 @@
                 </div>   
                 <div id="tab-info-container">
                     <!-- Tabbed Content -->
-                <div id="hometab" class="tabcontent">
+                <div id="hometab">
                     <div class="block-text">       
                     <h2>Need Insurance?</h2>
                     <p>Our agency represents over 20 companies and can offer you customized coverage with the most competitive rates. Click the tabs to find the right insurance policy for you!</p>
@@ -156,7 +156,6 @@
                 </div>
             </div>
           </div>
-
         </div>
     <?php include "includes/footer.php"; ?>
     </body>

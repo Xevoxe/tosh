@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang = "en">
     <head>
@@ -5,10 +6,11 @@
         <meta charset= "utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="Cache-control" content="no-cache">
-        <link type ="text/css" rel="stylesheet" href="css/style2.css">
+        <link type ="text/css" rel="stylesheet" href="css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Lato|Roboto|Pacifico" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
               
     </head>
 <!-- Header -->      
@@ -35,4 +37,3 @@
                         <a href="contact.php">Contact Us</a>
                 </nav>
 </header>
-<?php include "includes/formvalidation.php";?>

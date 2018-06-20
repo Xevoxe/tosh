@@ -1,191 +1,118 @@
-//Validator Constructor
-function Validator(form)
-{
 
-    this.form = document.forms[form];   //Points to the form that has validation
 
-    //Check to ensure a form element was found
-    if(!this.form){
-        alert("Error: Unable to locate form: " + form);
-        return;
-    }
+$(document).ready(function(){
+    
+    //Set focus on first errored element
+    var setfocus = "none";
+    var form_submit = false;
 
-    this.validateBlur = true;   //Sets the validation to occur on blur
 
-    this.addValidation = addValidation;     // Manually add a validation to a form element
-    this.validateObject = validateObject;   //Validates only the Object
-    this.debug = true;      //Add debug alerts
-    this.validationTypeList = setUpStoredValidationTypes();   // The current validations the validator supports
-    this.customValidationType = customValidationType;       //Creates a custom validation type
-    this.setUpValidations = setUpValidations;
-}
-
-//Validation Object
-function ValidationType(desc, value, errorMsg, testFunction)
-{
-    this.key = desc;                     //Description and key of the validation
-    this.value = value;                  //value of the key if there is any
-    this.errorMsg = errorMsg;            //Generic Error Message
-    this.testFunction = testFunction;    // Function to test the validation
-
-}
-
-//Stored ValidationTypes
-function setUpStoredValidationTypes()
-{
-    var list = [];
-
-    list.push(new ValidationType("required", 0, "Required", testRequiredInput));
-    list.push(new ValidationType("pattern", 0, "Invalid Input", testPattern));
-    list.push(new ValidationType("maxlength", 0, "Maximum characters reached" , testMaxLength));
-    return list;
-}
-
-//Add a custom validation Type
-function customValidationType(desc, value, genericMsg, testFunction){
-    this.validationTypeList[desc] = new ValidationType(desc, value, genericMsg, testFunction)
-}
-
-//This function sets up validations based on HTML form validations
-function setUpValidations()
-{
-    var elements = this.form.elements;     //Get list of form elements
-    //iterate through the elements to set up validations
-    for( var item = 0 ; item < elements.length; item++){
-        for( var val = 0 ; val < this.validationTypeList.length; val++)
-        {
-            var attribute = this.validationTypeList[val].key;
-            var error = this.validationTypeList[val].errorMsg;
-            var testFunction = this.validationTypeList[val].testFunction;
-
-            if(elements[item].hasAttribute(attribute))
-            {
-                
-                var value = elements[item].getAttribute(attribute);
-                var newValidationType = new ValidationType(attribute,value,error,testFunction);
-                //check to see  if the validation has a value
-                if(value){
-                    newValidationType.value = value;
-                }
-                this.addValidation(elements[item], newValidationType, error, elements[item].name + "error" )
+    //Handle form input
+    $("form").keyup(function(e){
+        //Handle telephone input
+        $(this).find('input[type=tel]').each(function(){
+            if($(this).attr("type") == "tel"){
+                var number = $(this).val();
+                if(number.length == 3 || number.length == 7){
+                    number = number + '-';
+                    $(this).val(number);
+                }       
             }
-        }
-    }
-}
+        });
+    });
 
+    $("form").submit(function(e){
+         //Prevent the form from submitting
+        e.preventDefault(e);
 
-//Adds a validation to a form element
-function addValidation(validationTarget, validationType, errorMsg, errorSpan)
-{
-    //check to see if a form element already has a validationList
-    if(!validationTarget.validationList){
-        var list = [];
-        validationTarget.validationList = list;
-    }
+        //Tracks validation of form for submission to server
+        var validated = true;
+        var form = this;
 
-    //Create validationObject and add it to the list of validations
-    var validateObject = new ValidationObject(validationTarget,validationType, errorMsg, errorSpan);
-    validationTarget.validationList.push(validateObject);
+    //Begin Form validation
 
-    if(this.validateBlur)
-    {
-        validationTarget.onblur = this.validateObject;
-    }
+        $(form).find(':required').each(function(){
+            //Check for empty value
+            if(!$.trim($(this).val())){
 
-}
+                //Set focus to first errored element
+                if(setfocus === "none"){
+                    $(this).focus();
+                    setfocus = $(this).attr('id');
+                }
+                invalidElement($(this));
+                validate = false;
+            }
 
-//Validation Object
-function ValidationObject(formElement, validationType, errorMsg, errorSpan)
-{
-    this.formElement = formElement;
-    this.validationType = validationType             //The type of validation to be checked
-    this.error = errorMsg;                           //The error message 
-    this.errorSpan = errorSpan;                     //Error message display location
-    this.validate = validate;
-    
-}
+            //Email Pattern Validation
+            if($(this).attr("type") == "email")
+                validateEmail($(this));
 
-//Validates an Object
-function validateObject()
-{
-    bRet = true;        //Object starts out validated
-    if(!this.validationList && validator.debug === true){
-        alert("No validation set up on element:" + this.name);
-        return;
-    }
-    for(var validation = 0 ; validation < this.validationList.length; validation++){
+            if($(this).attr("type") == "tel"){
+                  var phone_reg = /^\d{3}-\d{3}-\d{4}$/
+                  if(!phone_reg.test($.trim($(this).val()))) {
+                    $(this).val("");
+                    invalidElement($(this));
+                  } 
+                }  
+
+            //Change styles back when element has been manipulated
+        }).keyup(function (){
+            $(this).removeClass("border-error");
+            $("label[for='" + $(this).attr('id') + "']").removeClass("label-error");
+            
+            //validate email
+            if($(this).attr("type") == "email")
+                validateEmail($(this));   
+
+            //Set focus back to none
+            setfocus = "none";
+        });
+
+        //Procced to form submission if validated
+        if(validated && !form_submit){
+            form_submit = true;
+            var post_url = $(this).attr("action");  //get form action url
+            var request_method = $(this).attr("method") //get form GET/POST method
+            var form_data = $(this).serialize(); //encode form elements fo submission
         
-        bRet = this.validationList[validation].validate();
-
-        //If the object fails validation stop the checks
-        if(!bRet){
-            return bRet;
+            $.ajax({
+                type: request_method,
+                dataType : 'JSON',
+                data: form_data  
+            })
+            .done(function(response){
+                    //handle the server response 
+                    console.log("Done!");
+                    console.log(JSON.stringify(response));
+                    console.log(response.text);
+                    if(response.type == 'error'){
+                       var output = '<div class = "error">' + response.text + '</div>';
+                    }
+                    else {
+                        $(form)[0].reset();
+                        var output = '<div class = "success">' + response.text + '</div>';
+                    }
+                    $(".info-box").html(output);
+            });         
         }
-    }
-    
-}
 
-function validate(){
-    //Evaluate the validationType for a command and value
-    return this.validationType.testFunction(this);
-}
+    });
 
-
-//Test to ensure element has been filled out
-function testRequiredInput(validateObject){
-    var formElement = validateObject.formElement;
-    var errorSpan = validateObject.errorSpan;
-    var error = validateObject.error;
-
-    if(!validateObject.formElement.value.length>0)
-    {
-       document.getElementById(errorSpan).innerHTML = error;
-       return false;
-    }
-    else {
-        document.getElementById(errorSpan).innerHTML = "";
-    }
-    return true;
-}
-
-//Test for max input
-function testMaxLength(validateObject){
-    var formElement = validateObject.formElement;
-    var maxLength = validateObject.validationType.value;
-    var errorSpan = validateObject.errorSpan;
-    var error = validateObject.error;
-    console.log(formElement.value.length);
-    console.log(maxLength);
-    if(formElement.value.length > maxLength)
-    {
-        //Shorten Input and paste error 
-        formElement.value = formElement.value.substring(0,maxLength);
-        document.getElementById(errorSpan).innerHTML = error;
-        console.log(formElement.value.length);
-        return false;
-    }
-    else{
-        document.getElementById(errorSpan).innerHTML = "";
+    function validateEmail(email){
+        var email_reg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+            if(!email_reg.test($.trim(email.val())))
+            {
+                invalidElement(email);
+            }
     }
 
-    return true;
-}
-
-//Test for pattern
-function testPattern(validateObject){
-    
-    var formElement = validateObject.formElement;
-    var errorSpan = validateObject.errorSpan;
-    var pattern = validateObject.validationType.value;
-    var error = validateObject.error;
-
-    if(formElement.value.search(pattern) < 0){
-        document.getElementById(errorSpan).innerHTML = error;
-        return false;
-    }
-    else {
-        document.getElementById(errorSpan).innerHTML = "";
+    function invalidElement(element){
+         //Change border color to red
+         element.addClass("border-error");
+         //Change label required to red
+         $("label[for='" + element.attr('id') + "']").addClass("label-error");
     }
 
-    return true;
-}
+
+});
